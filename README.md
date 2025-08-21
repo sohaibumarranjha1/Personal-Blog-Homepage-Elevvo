@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<img width="1360" height="627" alt="blog 2" src="https://github.com/user-attachments/assets/e4ab5ce7-a33f-4e81-8d61-422a697a1876" /># 📰 Task 4 — Personal Blog Homepage (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, responsive **Personal Blog Homepage** built in **React** with a **card grid**, **category filter**, **search**, and **pagination** — matching the black & soft-yellow Elevvo theme and footer credit.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
+- 🧭 **Header** with blog title & nav
+- 🗂️ **Category Filter** (e.g., Tech, Travel, Food)
+- 🔎 **Search by Title** (instant filtering)
+- 🧩 **Card Grid** (image, title, excerpt, date)
+- 📄 **Pagination** (limit posts per page)
+- 📱 **Responsive Layout** (mobile → desktop)
+- 🦶 **Footer** with credit: `© 2025 Elevvo — Built by sohaibranjha`
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
+- **React** (Vite or CRA)
+- **CSS** (custom, responsive)
+- **JavaScript (ES6+)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Project Structure
+personal-blog/
+├── src/
+│ ├── App.js
+│ ├── data/posts.js # sample posts (title, category, date, image, excerpt)
+│ ├── components/
+│ │ ├── Header.jsx
+│ │ ├── Footer.jsx
+│ │ ├── BlogCard.jsx
+│ │ ├── CategoryFilter.jsx
+│ │ └── Pagination.jsx
+│ ├── styles/
+│ │ └── blog.css # black & yellow theme
+│ └── assets/
+│ ├── logo.png
+│ ├── tech1.jpg
+│ ├── travel1.jpg
+│ ├── food1.jpg
+│ └── ... (add more)
+├── index.html
+├── package.json
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+> ℹ️ **Case-sensitive assets:** If your imports say `logo.png`, make sure the file name is exactly `logo.png` (not `logo.PNG`).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Option A — Vite (recommended)
+```bash
+npm create vite@latest personal-blog -- --template react
+cd personal-blog
+npm install
 
-### `npm run eject`
+🧩 **How It Works**  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Filtering:** Category buttons update local state → filter the posts list.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Search:** Text input filters posts by title (case-insensitive).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Pagination:** After filtering, posts are sliced by POSTS_PER_PAGE.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Cards:** Each card shows image, title, excerpt, and date.
 
-## Learn More
+**Preview**
+<img width="1360" height="648" alt="blog 1" src="https://github.com/user-attachments/assets/f1b44ed0-26d4-410b-b47e-bf17979675da" />
+<img width="1360" height="627" alt="blog 2" src="https://github.com/user-attachments/assets/84cdd95e-33d4-4dbb-a675-26f455d2dad9" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**© 2025 Elevvo — Built by sohaibranjha.**
