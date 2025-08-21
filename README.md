@@ -68,9 +68,4 @@ npm install
 
 **Cards:** Each card shows image, title, excerpt, and date.
 
-**Preview**
-<img width="1360" height="648" alt="blog 1" src="https://github.com/user-attachments/assets/f1b44ed0-26d4-410b-b47e-bf17979675da" />
-<img width="1360" height="627" alt="blog 2" src="https://github.com/user-attachments/assets/84cdd95e-33d4-4dbb-a675-26f455d2dad9" />
-
-
 **© 2025 Elevvo — Built by sohaibranjha.**
